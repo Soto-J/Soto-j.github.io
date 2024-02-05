@@ -6,7 +6,8 @@ export const Projects = () => {
     {
       title: "Project 1",
       src: "/images/projects/mta-schedule.png",
-      description: "This is a project",
+      description:
+        "Application enabling users to check for the most recent MTA status alert and view the current MTA schedule in real time. This app was built using React, Next.js, and Tailwind CSS.",
     },
     {
       title: "Project 2",
@@ -27,7 +28,9 @@ export const Projects = () => {
 
   return (
     <div className="p-8 py-12">
-      <h2 className="text-4xl font-bold text-center">Projects</h2>
+      <h2 className="text-4xl font-bold text-center">
+        Here are some of my Projects
+      </h2>
 
       <div className="grid grid-cols-2 xl:grid-cols-4 p-4 justify-items-center mt-8 gap-6">
         {projects.map((project) => (

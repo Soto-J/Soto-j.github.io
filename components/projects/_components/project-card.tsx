@@ -12,7 +12,7 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({ title, src, description }: ProjectCardProps) => {
   return (
-    <Card className="py-4 max-w-fit">
+    <Card className="py-4 max-w-xs">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <div className="flex justify-between w-full">
           <h4 className="font-bold text-large">{title}</h4>
@@ -27,8 +27,8 @@ export const ProjectCard = ({ title, src, description }: ProjectCardProps) => {
           </div>
         </div>
 
-        <p className="text-tiny uppercase font-bold">{description}</p>
-        <small className="text-default-500">{description}</small>
+        {/* <p className="text-tiny uppercase font-bold">{description}</p> */}
+        <small className="text-default-500 mt-1">{description}</small>
       </CardHeader>
 
       <CardBody className="overflow-visible py-2">
