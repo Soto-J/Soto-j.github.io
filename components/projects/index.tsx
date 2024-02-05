@@ -29,7 +29,7 @@ export const Projects = () => {
     <div className="p-8 py-12">
       <h2 className="text-4xl font-bold text-center">Projects</h2>
 
-      <div className="grid grid-cols-2 xl:grid-cols-4 p-4 justify-items-center mt-8">
+      <div className="grid grid-cols-2 xl:grid-cols-4 p-4 justify-items-center mt-8 gap-6">
         {projects.map((project) => (
           <ProjectCard
             key={project.title}
