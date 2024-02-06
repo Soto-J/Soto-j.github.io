@@ -7,10 +7,18 @@ import { BsGithub } from "react-icons/bs";
 type ProjectCardProps = {
   title: string;
   src: string;
+  liveHref: string;
+  githubHref: string;
   description: string;
 };
 
-export const ProjectCard = ({ title, src, description }: ProjectCardProps) => {
+export const ProjectCard = ({
+  title,
+  src,
+  description,
+  liveHref,
+  githubHref,
+}: ProjectCardProps) => {
   return (
     <Card className="py-4 max-w-xs">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -18,10 +26,10 @@ export const ProjectCard = ({ title, src, description }: ProjectCardProps) => {
           <h4 className="font-bold text-large">{title}</h4>
 
           <div className="flex gap-x-6">
-            <Link href="/">
+            <Link href={liveHref} target="_blank">
               <MdLiveTv className="h-6 w-6" />
             </Link>
-            <Link href="/">
+            <Link href={githubHref}>
               <BsGithub className="h-6 w-6" />
             </Link>
           </div>
@@ -31,14 +39,17 @@ export const ProjectCard = ({ title, src, description }: ProjectCardProps) => {
         <small className="text-default-500 mt-1">{description}</small>
       </CardHeader>
 
-      <CardBody className="overflow-visible py-2">
-        <Image
-          alt="Card background"
-          className="object-cover rounded-xl"
-          src={src}
-          width={270}
-          height={150}
-        />
+      <CardBody className="overflow-visible">
+        <div className="relative h-56 mt-auto">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src={src}
+            fill
+            // width={270}
+            // height={150}
+          />
+        </div>
       </CardBody>
     </Card>
   );
