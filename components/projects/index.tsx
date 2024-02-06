@@ -37,16 +37,16 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="relative p-8 py-12">
-      <Image
-        src="/images/color-sharp.png"
-        alt="bg-1"
-        fill
-        sizes="100vw"
-        className="z-0 object-cover"
-      />
-
-      <div className="z-10">
+    <div
+      id="#projects"
+      style={{
+        backgroundImage: "url('/images/color-sharp.png')",
+        objectFit: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+      className="relative p-8 py-12"
+    >
+      <div className="">
         <h2 className="text-center text-4xl font-bold">Projects</h2>
 
         <p className="text-center">Here are some of my proudest work!</p>

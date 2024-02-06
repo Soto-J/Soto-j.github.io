@@ -2,20 +2,18 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className="relative min-h-10 py-10">
-      <Image
-        fill
-        src="/images/color-sharp2.png"
-        alt="bg-2"
-        quality={100}
-        sizes="100vw"
-        className="z-0 object-cover"
-      />
+    <div
+      style={{
+        backgroundImage: "url('/images/color-sharp2.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+      className="min-h-screen py-10"
+    >
+      <h1 className="py-4 text-center text-4xl font-bold">About Me</h1>
 
-      <div className="z-10 mx-auto max-w-5xl p-4">
-        <h1 className="text-center text-4xl font-bold">About Me</h1>
-
-        <div className="flex">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center p-4 md:flex-row">
+        <div className="mt-12 flex">
           <div className="relative flex-1">
             <Image
               src="/images/programming.svg"
@@ -29,9 +27,13 @@ export const About = () => {
             With a keen interest in the latest technologies and trends in the
             software industry, I am constantly striving to improve my skills and
             knowledge to become an exceptional developer. I have experience
-            building web applications using tools such as Javascript,
-            React/Nextjs, CSS, Mongodb, and Prisma. I'm ready to showcase my
-            knowledge and skills in new opportunities.
+            building web applications using tools such as{" "}
+            <span className="text-yellow-500">Javascript</span>,{" "}
+            <span className="text-blue-500">React</span>/Nextjs,{" "}
+            <span className="text-sky-500">CSS</span>,{" "}
+            <span className="text-green-500">Mongodb</span>, and{" "}
+            <span className="text-purple-500">Prisma</span>. I&apos;m ready to
+            showcase my knowledge and skills in new opportunities.
           </p>
         </div>
       </div>
