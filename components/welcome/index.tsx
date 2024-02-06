@@ -11,7 +11,7 @@ export const Welcome = () => {
         backgroundImage: "url('/images/banner-bg.png')",
         objectFit: "cover",
       }}
-      className="relative flex min-h-[92vh] items-center justify-center p-2 text-slate-200"
+      className="flex min-h-[92vh] items-center justify-center p-2 text-slate-200"
     >
       <div className="max-w-2xl p-4 lg:max-w-6xl">
         <div className="flex flex-col-reverse text-center lg:flex-row lg:text-start">
