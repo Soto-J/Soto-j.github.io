@@ -1,24 +1,26 @@
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Button } from "@nextui-org/react";
+
 export const Welcome = () => {
   return (
-    <div className="relative min-h-[92vh] p-2 flex items-center justify-center text-slate-200">
+    <div className="relative flex min-h-[92vh] items-center justify-center p-2 text-slate-200">
       <Image
         src="/images/banner-bg.png"
         alt="banner"
         quality={100}
         fill
-        className="object-cover"
+        className="z-0 object-cover"
       />
 
-      <div className="z-10 max-w-2xl lg:max-w-6xl p-4">
-        <div className="text-center lg:text-start flex flex-col-reverse lg:flex-row">
+      <div className="z-20 max-w-2xl p-4 lg:max-w-6xl">
+        <div className="flex flex-col-reverse text-center lg:flex-row lg:text-start">
           <div className="flex-1">
-            <h1 className="font-bold text-5xl">
+            <h1 className="text-5xl font-bold">
               Hello, Welcome To My Personal Portfolio!
             </h1>
+
             <p className="mt-6 text-lg font-light">
               I'm John Soto, a passionate and dedicated developer from New York
               who recently graduated with a Bachelor's degree in Computer
@@ -29,19 +31,19 @@ export const Welcome = () => {
             </p>
           </div>
 
-          <div className="flex-1 mt-8 lg:mt-0">
+          <div className="mt-8 flex-1 lg:mt-0">
             <Image
               src="/images/header-img.svg"
               alt="header-img"
               quality={100}
               height={300}
               width={300}
-              className="mx-auto animate-slowBounce mt-12"
+              className="mx-auto mt-12 animate-slowBounce"
             />
           </div>
         </div>
 
-        <div className="max-w-fit mx-auto lg:mx-0 pt-12">
+        <div className="mx-auto max-w-fit pt-12 lg:mx-0">
           <Button as={Link} href="/resume/John_Soto-resume.pdf" size="lg">
             Resume
           </Button>

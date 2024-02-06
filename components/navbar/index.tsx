@@ -13,7 +13,6 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import { LiaLinkedin } from "react-icons/lia";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export const NavigationBar = () => {
@@ -33,7 +32,7 @@ export const NavigationBar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         {menuItems.map((item) => (
           <NavbarItem key={item}>
             <Link href={`/${item}`} color="foreground" className="capitalize">
@@ -60,12 +59,20 @@ export const NavigationBar = () => {
 
       <NavbarContent justify="end" className="gap-6">
         <NavbarItem>
-          <Link href="/" color="foreground">
+          <Link
+            href="https://www.linkedin.com/in/john-soto90"
+            color="foreground"
+            target="_blank"
+          >
             <BsLinkedin size={24} />
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/" color="foreground">
+          <Link
+            href="https://github.com/Soto-J"
+            color="foreground"
+            target="_blank"
+          >
             <BsGithub size={24} />
           </Link>
         </NavbarItem>
@@ -79,8 +86,8 @@ export const NavigationBar = () => {
                 index === 2
                   ? "primary"
                   : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
+                    ? "danger"
+                    : "foreground"
               }
               className="w-full"
               href="#"

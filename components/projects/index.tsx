@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { ProjectCard } from "./_components/project-card";
 
 export const Projects = () => {
@@ -35,22 +37,31 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="p-8 py-12">
-      <h2 className="text-4xl font-bold text-center">Projects</h2>
+    <div className="relative z-0 p-8 py-12">
+      <Image
+        src="/images/color-sharp.png"
+        alt="bg-1"
+        fill
+        className="z-0 object-cover"
+      />
 
-      <p className="text-center">Here are some of my proudest work!</p>
+      <div className="z-10">
+        <h2 className="text-center text-4xl font-bold">Projects</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 p-4 justify-items-center mt-8 gap-6">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project.title}
-            title={project.title}
-            src={project.src}
-            description={project.description}
-            liveHref={project.liveHref}
-            githubHref={project.githubHref}
-          />
-        ))}
+        <p className="text-center">Here are some of my proudest work!</p>
+
+        <div className="mt-8 grid grid-cols-1 justify-items-center gap-6 p-4 md:grid-cols-2 xl:grid-cols-4">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              src={project.src}
+              description={project.description}
+              liveHref={project.liveHref}
+              githubHref={project.githubHref}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

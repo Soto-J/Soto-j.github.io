@@ -20,10 +20,10 @@ export const ProjectCard = ({
   githubHref,
 }: ProjectCardProps) => {
   return (
-    <Card className="py-4 max-w-xs">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <div className="flex justify-between w-full">
-          <h4 className="font-bold text-large">{title}</h4>
+    <Card className="max-w-xs py-4">
+      <CardHeader className="flex-col items-start px-4 pb-0 pt-2">
+        <div className="flex w-full justify-between">
+          <h4 className="text-large font-bold">{title}</h4>
 
           <div className="flex gap-x-6">
             <Link href={liveHref} target="_blank">
@@ -36,14 +36,14 @@ export const ProjectCard = ({
         </div>
 
         {/* <p className="text-tiny uppercase font-bold">{description}</p> */}
-        <small className="text-default-500 mt-1">{description}</small>
+        <small className="mt-1 text-default-500">{description}</small>
       </CardHeader>
 
       <CardBody className="overflow-visible">
-        <div className="relative h-56 mt-auto">
+        <div className="relative mt-auto h-56">
           <Image
             alt="Card background"
-            className="object-cover rounded-xl"
+            className="rounded-xl object-cover"
             src={src}
             fill
             // width={270}
