@@ -7,14 +7,15 @@ export const Welcome = () => {
   return (
     <div className="relative flex min-h-[92vh] items-center justify-center p-2 text-slate-200">
       <Image
+        fill
         src="/images/banner-bg.png"
         alt="banner"
         quality={100}
-        fill
-        className="z-0 object-cover"
+        sizes="100vw"
+        className="-z-10 object-cover"
       />
 
-      <div className="z-20 max-w-2xl p-4 lg:max-w-6xl">
+      <div className="z-10 max-w-2xl p-4 lg:max-w-6xl">
         <div className="flex flex-col-reverse text-center lg:flex-row lg:text-start">
           <div className="flex-1">
             <h1 className="text-5xl font-bold">

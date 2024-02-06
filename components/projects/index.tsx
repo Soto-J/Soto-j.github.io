@@ -37,11 +37,12 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="relative z-0 p-8 py-12">
+    <div className="relative p-8 py-12">
       <Image
         src="/images/color-sharp.png"
         alt="bg-1"
         fill
+        sizes="100vw"
         className="z-0 object-cover"
       />
 

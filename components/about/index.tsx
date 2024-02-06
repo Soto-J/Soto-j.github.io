@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <div className="relative py-10">
+    <div className="relative min-h-10 py-10">
       <Image
+        fill
         src="/images/color-sharp2.png"
         alt="bg-2"
         quality={100}
-        fill
+        sizes="100vw"
         className="z-0 object-cover"
       />
 
