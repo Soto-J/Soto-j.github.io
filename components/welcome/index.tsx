@@ -17,16 +17,16 @@ export const Welcome = () => {
         <div className="flex flex-col-reverse text-center lg:flex-row lg:text-start">
           <div className="flex-1">
             <h1 className="text-5xl font-bold">
-              Hello, Welcome To My Personal Portfolio!
+              Hello&lsquo; Welcome To My Personal Portfolio!
             </h1>
 
             <p className="mt-6 text-lg font-light">
-              I'm John Soto, a passionate and dedicated developer from New York
-              who recently graduated with a Bachelor's degree in Computer
+              I&apos;m John Soto, a passionate and dedicated developer from New York
+              who recently graduated with a Bachelor&apos;s degree in Computer
               Science in the spring of 2023. I have a strong passion for
               building innovative applications and websites that can make a
-              positive impact on people's lives. I'm thrilled to share my
-              journey, experiences, and projects with you.
+              positive impact on people&apos;s lives. I&apos;m thrilled to share
+              my journey, experiences, and projects with you.
             </p>
           </div>
 
