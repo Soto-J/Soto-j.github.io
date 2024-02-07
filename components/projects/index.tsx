@@ -10,7 +10,7 @@ export const Projects = () => {
       liveHref: "https://stream-platform-soto.vercel.app/",
       githubHref: "https://github.com/Soto-J/stream-platform",
       description:
-        "Streamify service that allows users to stream content, including video games, music, and creative content. Watch what you love, connect with streamers, and chat with tons of communities.",
+        "Streamify service that allows users to stream content&lsquo; including video games&lsquo; music&lsquo; and creative content. Watch what you love&lsquo; connect with streamers&lsquo; and chat with tons of communities.",
     },
     {
       title: "King Academy",
@@ -34,7 +34,7 @@ export const Projects = () => {
       liveHref: "https://twitter-clone-soto-j.vercel.app/",
       githubHref: "https://github.com/Soto-J/twitter-clone",
       description:
-        "Web application enabling account creation through sign-in credentials, allowing users to create posts, engage by liking and commenting on content, and establish connections through the follow and unfollow user feature.",
+        "Web application enabling account creation through sign-in credentials&lsquo; allowing users to create posts&lsquo; engage by liking and commenting on content&lsquo; and establish connections through the follow and unfollow user feature.",
     },
   ];
 
