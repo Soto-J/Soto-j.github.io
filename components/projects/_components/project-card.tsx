@@ -23,13 +23,13 @@ export const ProjectCard = ({
     <Card className="max-w-xs py-4">
       <CardHeader className="flex-col items-start px-4 pb-0 pt-2">
         <div className="flex w-full justify-between">
-          <h4 className="text-large font-bold">{title}</h4>
+          <h4 className="text-large font-semibold">{title}</h4>
 
           <div className="flex gap-x-6">
             <Link href={liveHref} target="_blank">
               <MdLiveTv className="h-6 w-6" />
             </Link>
-            <Link href={githubHref}>
+            <Link href={githubHref} target="_blank">
               <BsGithub className="h-6 w-6" />
             </Link>
           </div>
