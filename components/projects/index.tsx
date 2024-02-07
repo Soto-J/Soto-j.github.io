@@ -7,7 +7,7 @@ export const Projects = () => {
     {
       title: "Streamify",
       src: "/images/projects/hero-card-complete.jpeg",
-      liveHref: "https://stream-platform-soto.vercel.app/",
+      liveHref: "https://stream-platform-soto.vercel.app",
       githubHref: "https://github.com/Soto-J/stream-platform",
       description:
         "Streamify service that allows users to stream content, including video games, music, and creative content. Watch what you love, connect with streamers, and chat with tons of communities.",
@@ -15,7 +15,7 @@ export const Projects = () => {
     {
       title: "King Academy",
       src: "/images/projects/hero-card-complete.jpeg",
-      liveHref: "https://mta-schedule.vercel.app/",
+      liveHref: "https://king-academy.vercel.app",
       githubHref: "https://github.com/Soto-J/king-academy.git",
       description:
         "A web application tailored for a youth Baseball organization in my community called King Academy based in New York. This organization that focuses on the player’s development.",
@@ -23,7 +23,7 @@ export const Projects = () => {
     {
       title: "MTA Never Late",
       src: "/images/projects/mta-schedule.png",
-      liveHref: "https://mta-schedule.vercel.app/",
+      liveHref: "https://mta-schedule.vercel.app",
       githubHref: "https://github.com/Soto-J/mta-schedule.git",
       description:
         "Web application enabling users to check for the most recent MTA status alert and view the current MTA schedule in real time. MTA Never Late can provide information on service alerts and delays.",
@@ -31,7 +31,7 @@ export const Projects = () => {
     {
       title: "Twitter Clone",
       src: "/images/projects/twitter-clone.png",
-      liveHref: "https://twitter-clone-soto-j.vercel.app/",
+      liveHref: "https://twitter-clone-soto-j.vercel.app",
       githubHref: "https://github.com/Soto-J/twitter-clone",
       description:
         "Web application enabling account creation through sign-in credentials, allowing users to create posts, engage by liking and commenting on content, and establish connections through the follow and unfollow user feature.",
@@ -46,6 +46,7 @@ export const Projects = () => {
         objectFit: "cover",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
       className="relative p-8 py-12"
     >
