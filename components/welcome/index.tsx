@@ -10,6 +10,8 @@ export const Welcome = () => {
       style={{
         backgroundImage: "url('/images/banner-bg.png')",
         objectFit: "cover",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
       }}
       className="flex min-h-[92vh] items-center justify-center p-2 text-slate-200"
     >
