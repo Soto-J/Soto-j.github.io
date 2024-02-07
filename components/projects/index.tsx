@@ -44,6 +44,7 @@ export const Projects = () => {
       style={{
         backgroundImage: "url('/images/color-sharp.png')",
         objectFit: "cover",
+        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
       className="relative p-8 py-12"
