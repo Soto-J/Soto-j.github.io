@@ -21,7 +21,7 @@ export const NavigationBar = () => {
   const menuItems = ["home", "projects", "about"];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -78,7 +78,7 @@ export const NavigationBar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="flex items-center justify-start">
+      <NavbarMenu className="items-center pt-12">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
