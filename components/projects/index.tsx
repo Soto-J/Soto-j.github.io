@@ -18,7 +18,7 @@ export const Projects = () => {
       liveHref: "https://mta-schedule.vercel.app/",
       githubHref: "https://github.com/Soto-J/king-academy.git",
       description:
-        "A web application tailored for a youth Baseball organization in my community called King Academy based in New York. This organization that focuses on the player’s development.",
+        "A web application tailored for a youth Baseball organization in my community called King Academy based in New York. This organization that focuses on the player&apos;s development.",
     },
     {
       title: "MTA Never Late",
@@ -51,7 +51,7 @@ export const Projects = () => {
       <div className="">
         <h2 className="text-center text-4xl font-bold">Projects</h2>
 
-        <p className="text-center text-default-500 py-2">
+        <p className="py-2 text-center text-default-500">
           Here are some of my proudest work!
         </p>
 
