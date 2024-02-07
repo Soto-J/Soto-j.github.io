@@ -3,6 +3,7 @@ import Image from "next/image";
 export const About = () => {
   return (
     <div
+      id="about"
       style={{
         backgroundImage: "url('/images/color-sharp2.png')",
         backgroundRepeat: "no-repeat",

@@ -6,7 +6,7 @@ import { Button } from "@nextui-org/react";
 export const Welcome = () => {
   return (
     <div
-      id="#home"
+      id="home"
       style={{
         backgroundImage: "url('/images/banner-bg.png')",
         objectFit: "cover",

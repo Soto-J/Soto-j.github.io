@@ -18,7 +18,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 export const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["home", "projects", "about", "contact"];
+  const menuItems = ["home", "projects", "about"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -35,7 +35,7 @@ export const NavigationBar = () => {
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         {menuItems.map((item) => (
           <NavbarItem key={item}>
-            <Link href={`/${item}`} color="foreground" className="capitalize">
+            <Link href={`#${item}`} color="foreground" className="capitalize">
               {item}
             </Link>
           </NavbarItem>
@@ -78,20 +78,14 @@ export const NavigationBar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="flex items-center justify-start">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-              }
-              className="w-full"
-              href="#"
+              href={`#${item}`}
+              color="foreground"
               size="lg"
+              className="w-full capitalize"
             >
               {item}
             </Link>

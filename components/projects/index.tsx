@@ -40,7 +40,7 @@ export const Projects = () => {
 
   return (
     <div
-      id="#projects"
+      id="projects"
       style={{
         backgroundImage: "url('/images/color-sharp.png')",
         objectFit: "cover",
