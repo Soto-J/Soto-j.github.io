@@ -1,12 +1,10 @@
-import Image from "next/image";
-
 import { ProjectCard } from "./_components/project-card";
 
 export const Projects = () => {
   const projects = [
     {
       title: "Streamify",
-      src: "/images/projects/hero-card-complete.jpeg",
+      src: "/images/projects/streamify.png",
       liveHref: "https://stream-platform-soto.vercel.app",
       githubHref: "https://github.com/Soto-J/stream-platform",
       description:
@@ -53,9 +51,9 @@ export const Projects = () => {
       <div className="">
         <h2 className="text-center text-4xl font-bold">Projects</h2>
 
-        <p className="py-2 text-center text-default-500">
+        <h3 className="py-2 text-center text-default-500">
           Here are some of my proudest work!
-        </p>
+        </h3>
 
         <div className="mt-8 grid grid-cols-1 justify-items-center gap-6 p-4 md:grid-cols-2 xl:grid-cols-4">
           {projects.map((project) => (
