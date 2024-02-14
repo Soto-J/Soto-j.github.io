@@ -42,12 +42,10 @@ export const ProjectCard = ({
       <CardBody className="overflow-visible">
         <div className="relative mt-auto h-56">
           <Image
-            alt="Card background"
-            className="rounded-xl object-cover"
-            src={src}
             fill
-            // width={270}
-            // height={150}
+            src={src}
+            alt="Card background"
+            className="rounded-lg object-center"
           />
         </div>
       </CardBody>
