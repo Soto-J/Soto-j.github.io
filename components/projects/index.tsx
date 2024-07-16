@@ -12,7 +12,7 @@ export const Projects = () => {
     },
     {
       title: "King Academy",
-      src: "/images/projects/hero-card-complete.jpeg",
+      src: "/images/projects/king-academy.png",
       liveHref: "https://king-academy.vercel.app",
       githubHref: "https://github.com/Soto-J/king-academy.git",
       description:
