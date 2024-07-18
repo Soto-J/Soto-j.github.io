@@ -1,8 +1,9 @@
 import Image from "next/image";
 
-import { Link, Card, CardBody, CardHeader } from "@nextui-org/react";
 import { MdLiveTv } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
+
+import { Link, Card, CardBody, CardHeader } from "@nextui-org/react";
 
 type ProjectCardProps = {
   title: string;
@@ -20,8 +21,8 @@ export const ProjectCard = ({
   githubHref,
 }: ProjectCardProps) => {
   return (
-    <Card className="max-w-xs py-4">
-      <CardHeader className="flex-col items-start px-4 pb-0 pt-2">
+    <Card className="max-w-96 py-4">
+      <CardHeader className="flex-col items-start px-4 pb-0">
         <div className="flex w-full justify-between">
           <h4 className="text-large font-semibold">{title}</h4>
 
@@ -35,11 +36,10 @@ export const ProjectCard = ({
           </div>
         </div>
 
-        {/* <p className="text-tiny uppercase font-bold">{description}</p> */}
-        <small className="mt-1 text-default-500">{description}</small>
+        <p className="pt-4 text-sm font-light tracking-wide">{description}</p>
       </CardHeader>
 
-      <CardBody className="overflow-visible">
+      <CardBody className="overflow-visible pt-6">
         <div className="relative mt-auto h-56">
           <Image
             fill
